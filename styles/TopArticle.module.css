@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.container{
+    cursor: pointer;
+margin: 12px 5px 13px 5px;
+display: flex;
+height: 100px;
+width: 285px;
+background: #0c63a6;
+box-shadow:  5px 5px 10px #08406b,
+             -5px -5px 10px #0e76c6;
+             transition: 0.3s ease-in-out;
+
+      
+}
+
+.image{
+    
+    border-top: 5px solid #0c63a6;
+    border-left: 5px solid #0c63a6;
+    border-right: 5px solid #0c63a6;
+    border-bottom: 5px solid #0c63a6;
+    height: 100px;
+    width: 87px;
+    object-fit: cover;
+    object-position: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+
+.news {
+    font-family: "Jost";
+    font-size: 15px;
+    color: #2d88ce;
+    padding:0px 5px;
+
+}
+.content {
+ 
+    color: white;
+    font-size: 16px;
+    padding:0px 12px 0px 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    transition: 0.2s ease-in-out;
+}
+
+.date {
+    font-family: "Jost";
+    font-size: 15px;
+    color: #6097c2;
+    padding:0px 5px;
+}
+
+.container:hover {
+    background: #0b66ac;
+    box-shadow:  2px 2px 5px #095086,
+    -2px -2px 5px #0e76c6;
+    
+}
+
+.container:hover .image{
+    
+    border-top: 5px solid #0f72bd;
+    border-left: 5px solid #0f72bd;
+    border-right: 5px solid #0f72bd;
+    border-bottom: 5px solid #0f72bd;
+
+    object-position: 55%
+}
+
+.container:hover .content{
+    color: #EFBC30;
+
+
+}
+
+
+

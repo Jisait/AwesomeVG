@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main {
+height: 100vh;
+width: 100vw;
+display: grid;
+grid-template-columns: 305px 1fr;
+background-color: #252525
+}
+
+.container{
+	grid-column: 2;
+}
+
+.containerImage {
+	object-fit: cover;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	height: 220px;
+	width: 80%;
+	min-width: 600px;
+	border-radius:30px ;
+	background: #252525;
+	box-shadow:  9px 9px 10px #171717,
+             -9px -9px 10px #363535;
+
+}
+
+
+/* doughnut  */
+
+.doughnut {
+	height: 78px;
+	width: 78px;
+	margin-bottom: 8px;
+  }
+  
+  .outerDoughnut {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	width: 70px;
+	border-radius: 50px;
+	background: #252525;
+	box-shadow:  5px 5px 10px #151515,
+			   -5px -5px 10px #353535;
+	margin-left: 14px;
+  }
+  
+  .innerDoughnut {
+	position: absolute;
+	bottom: 14px;
+	left: 13px;
+	height:42px;
+	width:42px;
+	border-radius: 50px;
+	background: #252525;
+	box-shadow: inset 4px 4px 8px #151515,
+				inset -4px -4px 8px #353535;
+	z-index: 2
+  }
+  
+  .rating {
+  color: white;
+  font-family: "Jost";
+  font-size: 28px;
+  margin-top: 3px;
+  margin-left: 7px;
+  }
+
+
+
+  .title {
+
+	  font-size: 2em;
+	  color: white;
+	  font-family: "Jost";
+	  margin-left: auto;
+	  margin-right: auto;
+	  text-align: center;
+	  overflow: hidden;
+	  display: -webkit-box;
+	  -webkit-line-clamp: 1;
+	  -webkit-box-orient: vertical;
+  }
+ 
+
+  .containerGrid{
+	  display: grid;
+	  grid-template:1fr 1fr/10% 40% 40% 10% ;
+  }
+
+  .desc {
+	  margin: 10px;
+	  color: white;
+	  grid-column: 3;
+	  font-family: "Jost";
+	  text-align: justify;
+	  text-justify: auto;
+  }
+
+  .companies {
+	  grid-column: 2;
+	  grid-row: 1;
+	  color: white;
+	  font-family: "Jost";
+  }
+  

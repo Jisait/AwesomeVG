@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px 10px 10px 50px;
+  background: #252525;
+  box-shadow:  5px 5px 10px #111111,
+               -5px -5px 10px #393939;
+               cursor: pointer;
+}
+
+.container:hover{
+  background-color: #2b2b2b;
+}
+
+.container:hover .image{
+  border-top: 7px solid #2b2b2b;
+  border-left: 7px solid #2b2b2b;
+  border-right: 7px solid #2b2b2b;
+}
+
+.container:hover .title{
+  color: rgb(255, 230, 0);
+}
+
+
+.image {
+  object-fit: cover;
+height: 88px;
+  border-radius: 10px 10px 0px 0px;
+  border-top: 7px solid #252525;
+  border-left: 7px solid #252525;
+  border-right: 7px solid #252525;
+}
+
+.title {
+  font-family: "Jost";
+  color: white;
+  font-size: 18px;
+  margin: 5px 10px -7px 10px;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  min-height: 34px;
+}
+
+.desc {
+  font-size: 12px;
+  color: rgb(177, 177, 177);
+  padding: 0px 10px;
+  width:100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  margin-bottom: 14px;
+}
+
+.doughnut {
+  height: 78px;
+  width: 78px;
+  margin-bottom: 8px;
+}
+
+.outerDoughnut {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  background: #252525;
+  box-shadow:  5px 5px 10px #151515,
+             -5px -5px 10px #353535;
+  margin-left: 14px;
+}
+
+.innerDoughnut {
+  position: absolute;
+  bottom: 14px;
+  left: 13px;
+  height:42px;
+  width:42px;
+  border-radius: 50px;
+  background: #252525;
+  box-shadow: inset 4px 4px 8px #151515,
+              inset -4px -4px 8px #353535;
+  z-index: 2
+}
+
+.rating {
+color: white;
+font-family: "Jost";
+font-size: 28px;
+margin-top: 3px;
+margin-left: 7px;
+}
+
+.logosContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 74px;
+  color: rgb(90, 90, 90)
+}
+
+.dateContainer {
+  font-family: "Jost";
+  position: absolute;
+  color: white;
+  bottom: 25px;
+  left: 78px;
+}
+
+.releaseDate {
+  color: rgb(177, 177, 177);
+  font-size: 13px;
+  width: 100px;
+  margin-bottom: -3px;
+}

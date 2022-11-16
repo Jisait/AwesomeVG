@@ -1,0 +1,14 @@
+
+
+.button{
+  margin-top: 50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgb(1, 100, 1), rgb(2, 158, 2));
+  box-shadow:  31px 31px 62px #080808,
+               -31px -31px 62px #363636;
+  border: 2px solid rgb(2, 158, 2);
+}
+
+

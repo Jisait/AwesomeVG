@@ -1,0 +1,229 @@
+.main {
+  position: initial;
+  display:flex;
+  align-items: center;
+  height: 60px;
+  width: 100vw;
+  background-color: #e0e0e0;
+  z-index: 10;
+  
+}
+
+.appName{
+  font-family: "Jost";
+  font-size: 27px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+
+.searchBar {
+  color: black;
+  height: 40px;
+  width: 330px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #a1a1a1,
+              inset -5px -5px 10px #ffffff;
+  margin: 10px 20px;
+}
+
+
+/*  PS4 logo  */
+
+
+.buttonPS4Under{
+
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #ffffff,
+              inset -5px -5px 10px #a1a1a1;
+
+}
+
+.buttonPS4Over{
+  position: relative;
+  height: 28px;
+  width: 28px;
+  border-radius: 50px;
+  background: #e0e0e0;
+
+
+}
+
+.PS4logo {
+  position: absolute;
+  color: #0D5499;
+  z-index: 1
+}
+
+.buttonPS4Under:hover > .buttonPS4Over{
+  opacity: 0;
+
+}
+
+.buttonPS4Under:hover > .PS4logo{
+  color: white;
+
+}
+
+.buttonPS4Under:hover{
+
+background: linear-gradient(145deg, #07325e, #0D5499);
+box-shadow:  inset 5px 5px 10px #07325e,
+             inset -5px -5px 10px #0D5499;
+}
+
+/*  Xbox logo  */
+
+.buttonXboxUnder{
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #ffffff,
+              inset -5px -5px 10px #a1a1a1;
+ 
+}
+
+.buttonXboxOver{
+position: relative;
+  height: 28px;
+  width: 28px;
+  border-radius: 50px;
+background: #e0e0e0;
+
+
+}
+
+.Xboxlogo {
+  position: absolute;
+  color: #37962e;
+  z-index: 1
+}
+
+.buttonXboxUnder:hover > .buttonXboxOver{
+  opacity: 0;
+
+}
+
+.buttonXboxUnder:hover > .Xboxlogo{
+  color: white;
+
+}
+
+.buttonXboxUnder:hover{
+
+background: linear-gradient(145deg, #195c13, #37962e);
+box-shadow:  inset 5px 5px 10px #195c13,
+             inset -5px -5px 10px #37962e;;
+}
+
+/*  Steam logo  */
+
+.buttonSteamUnder{
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #ffffff,
+              inset -5px -5px 10px #a1a1a1;
+ 
+ 
+}
+
+.buttonSteamOver{
+position: relative;
+  height: 28px;
+  width: 28px;
+  border-radius: 50px;
+background: #e0e0e0;;
+
+
+}
+
+.Steamlogo {
+  position: absolute;
+  color: #184050;
+  z-index: 1
+}
+
+.buttonSteamUnder:hover > .buttonSteamOver{
+  opacity: 0;
+}
+
+.buttonSteamUnder:hover > .Steamlogo{
+  color: white;
+}
+
+.buttonSteamUnder:hover{
+background: linear-gradient(145deg, #1B293A, #184050);
+box-shadow:  inset 5px 5px 10px #1B293A,
+             inset -5px -5px 10px #184050;
+}
+
+
+/*  Switch logo  */
+
+.buttonSwitchUnder{
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #ffffff,
+              inset -5px -5px 10px #a1a1a1;
+ 
+ 
+}
+
+.buttonSwitchOver{
+position: relative;
+  height: 28px;
+  width: 28px;
+  border-radius: 50px;
+background: #e0e0e0;;
+
+
+}
+
+.Switchlogo {
+  position: absolute;
+  color: #E8442E;
+  z-index: 1
+}
+
+.buttonSwitchUnder:hover > .buttonSwitchOver{
+  opacity: 0;
+}
+
+.buttonSwitchUnder:hover > .Switchlogo{
+  color: white;
+}
+
+.buttonSwitchUnder:hover{
+background: linear-gradient(145deg, #b81701, #d45f4f);
+box-shadow:  inset 5px 5px 10px #b81701,
+             inset -5px -5px 10px #d45f4f;
+}
