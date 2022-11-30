@@ -5,6 +5,7 @@ height: 100vh;
 width: 100vw;
 
  display: grid;
+
  grid-template-columns: 305px 1fr;
 
 }
@@ -12,6 +13,7 @@ width: 100vw;
 .mainArticleContainer {
 	display: flex;
 	grid-column: 2;
+	margin-top: 60px;
 }
 		
 .cardContainer {

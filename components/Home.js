@@ -14,26 +14,21 @@ function Home() {
 
  
   useEffect(() => { 
-    fetch(`https://newsapi.org/v2/everything?q=video-games&apiKey=8417ef0137d3435da1db839eb0d10f87`)
+    fetch('https://awesome-vg-backend.vercel.app/articles')
       .then(response => response.json())
       .then(data => {
+        console.log("front", data)
   
-        setFirstArticle(<FirstArticles image={data.articles[0].urlToImage} title={data.articles[0].title} author={data.articles[0].author} date={new Intl.DateTimeFormat('en-US').format(new Date(data.articles[0].publishedAt))} desc={data.articles[0].description} content={data.articles[0].content}></FirstArticles>)
-        setSecondArticle(<SecondArticles  image={data.articles[1].urlToImage} title={data.articles[1].title} author={data.articles[1].author} date={new Intl.DateTimeFormat('en-US').format(new Date(data.articles[1].publishedAt))} desc={data.articles[1].description} content={data.articles[1].content}></SecondArticles>)
+        setFirstArticle(<FirstArticles image={data.results.articles[0].urlToImage} title={data.results.articles[0].title} author={data.results.articles[0].author} date={new Intl.DateTimeFormat('en-US').format(new Date(data.results.articles[0].publishedAt))} desc={data.results.articles[0].description} content={data.results.articles[0].content}></FirstArticles>)
+        setSecondArticle(<SecondArticles  image={data.results.articles[1].urlToImage} title={data.results.articles[1].title} author={data.results.articles[1].author} date={new Intl.DateTimeFormat('en-US').format(new Date(data.results.articles[1].publishedAt))} desc={data.results.articles[1].description} content={data.results.articles[1].content}></SecondArticles>)
         })
     }, []) 
-
-
 
 
   const [gamesData, setGamesData] = useState([]);
   const stopDouble = useRef(false)
 
-
-
-
- 
-
+  
   // FETCH OPENCRITIC //
 
   /*  const fetch = require('node-fetch');  */

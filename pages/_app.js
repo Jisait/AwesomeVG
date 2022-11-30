@@ -1,7 +1,6 @@
 import '../styles/globals.css';
 import Head from 'next/head';
 import Header from '../components/Header'
-import ArticlesContainer from '../components/ArticlesContainer'
 import Layout from '../components/Layout'
 import Loader from '../components/Loader'
 import {useState, useEffect} from 'react'
@@ -38,9 +37,10 @@ if (loader===true) {
   return (
     <Provider store={store}>
       <Head>
-        <title>Next.js App</title>
+        <title>Awesome VG</title>
+        <link rel="icon" href="/iconOnglet.png" />
       </Head>
-      <Header />
+      <Header/>
       <Layout>
         <Component {...pageProps} />
       </Layout>

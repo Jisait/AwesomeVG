@@ -11,10 +11,10 @@ const [topArticle, setTopArticle] = useState([])
 
 
 useEffect(() => { 
-  fetch(`https://newsapi.org/v2/everything?q=games&apiKey=8417ef0137d3435da1db839eb0d10f87`)
+  fetch(`https://awesome-vg-backend.vercel.app//articles`)
     .then(response => response.json())
     .then(data => {
-      setTopArticle(data.articles);
+      setTopArticle(data.results.articles);
     })
   }, []) 
 

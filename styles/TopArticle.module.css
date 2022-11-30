@@ -35,10 +35,9 @@ box-shadow:  5px 5px 10px #08406b,
     font-size: 15px;
     color: #2d88ce;
     padding:0px 5px;
-
 }
+
 .content {
- 
     color: white;
     font-size: 16px;
     padding:0px 12px 0px 5px;
@@ -64,19 +63,15 @@ box-shadow:  5px 5px 10px #08406b,
 }
 
 .container:hover .image{
-    
     border-top: 5px solid #0f72bd;
     border-left: 5px solid #0f72bd;
     border-right: 5px solid #0f72bd;
     border-bottom: 5px solid #0f72bd;
-
     object-position: 55%
 }
 
 .container:hover .content{
     color: #EFBC30;
-
-
 }
 
 
